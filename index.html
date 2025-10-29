@@ -48,13 +48,30 @@
 
 <section>
     <h2>Submit Your Video</h2>
-    <form>
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form action="https://formspree.io/f/meopkanq" method="POST">
+        <label>
+            Your name:
+            <input type="text" name="name">
+        </label>
+        <label>
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+    </form>
+    <!--<form>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <input type="url" name="video_url" placeholder="YouTube Video URL" required>
         <textarea name="message" rows="4" placeholder="Tell us what you'd like feedback on..."></textarea>
         <button type="submit">Submit for Review</button>
-    </form>
+    </form>-->
 </section>
 
 <section>
